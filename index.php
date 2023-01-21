@@ -17,6 +17,8 @@
                 '" .date('Y-m-d'). "',
                 '" .$_POST['waktu_berangkat']. "',
                 '" .$_POST['pesawat']. "',
+                '" .$_POST['Bangku']. "',
+                '" .$_POST['harga']. "',
                 '" .$_POST['metode_bayar']. "'
                 )");
              if($insert){
@@ -47,6 +49,20 @@
 
         <div class = "box">
             <table border="0" class="table-form">
+            <tr>
+                    <td>Jadwal Penerbangan</td>
+                    <td>:</td>
+                    <td>
+                        <select class="input-control" name="jadwalp">
+                            <option value="">--Cek Jadwal--</option>
+                            <option value="12">Berangkat 12.00 - Tiba 13.30</option>
+                            <option value="14">Berangkat 14.00 - Tiba 15.30</option>
+                            <option value="17">Berangkat 19.00 - Tiba 20.30</option>
+                            <option value="17">Berangkat 21.00 - Tiba 22.30</option>
+                            
+                        </select>
+                    </td>
+                </tr>
                 <tr>
                     <td>Nama Penumpang</td>
                     <td>:</td>
@@ -98,7 +114,7 @@
                             <option value="Pukul 11.00">Pukul 11.00</option>
                             <option value="Pukul 13.00">Pukul 13.00</option>
                             <option value="Pukul 15.00">Pukul 15.00</option>
-                            <option value="Pukul 18.00">Pukul 18.00</option>
+                            <option value="Pukul 19.00">Pukul 19.00</option>
                             <option value="Pukul 21.00">Pukul 21.00</option>
                             
                         </select>
@@ -124,6 +140,39 @@
                         </select>
                     </td>
                 </tr>
+                
+                <tr>
+                    <td>Bangku Pesawat</td>
+                    <td>:</td>
+                    <td>
+                    <select class="input-control" name="Bangku">
+                            <option value="">--pilih bangku--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Harga</td>
+                    <td>:</td>
+                    <td>
+                    <select class="input-control" name="harga">
+                            <option value="">--Harga--</option>
+                            <option value="Ekonomi">Ekonomi Rp.250.000</option>
+                            <option value="Premium">Premium Rp.500.000</option>
+                            <option value="Bisnis">Bisnis Rp.1000.000</option>
+                            
+                        </select>
+                    </td>
+                </tr>
                 <tr>
                     <td>Metode Pembayaran</td>
                     <td>:</td>
@@ -131,8 +180,13 @@
                     <select class="input-control" name="metode_bayar">
                             <option value="">--BAYAR--</option>
                             <option value="DANA">DANA</option>
-                            <option value="OVO">OVO</option>
-                            <option value="Transfer Bank">Transfer Bank</option>
+                            <option value="Kredivo">Kredivo</option>
+                            <option value="Gopay">Gopay</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Bank BRI">BRI</option>
+                            <option value="Bank BCA">BCA</option>
+                            <option value="Bank Mandiri">Mandiri</option>
+                            <option value="Permata Bank">Permata Bank</option>
                         </select>
                     </td>
                 </tr>

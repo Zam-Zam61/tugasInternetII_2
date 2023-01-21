@@ -59,6 +59,16 @@
             <td><?php echo $p->pesawat ?></td>
         </tr>
         <tr>
+                    <td>Nomor Kursi</td>
+                    <td>:</td>
+                    <td><?php echo $p->Bangku ?></td>
+                </tr>
+                <tr>
+                    <td>Kelas dan Harga</td>
+                    <td>:</td>
+                    <td><?php echo $p->harga ?></td>
+                </tr>
+        <tr>
             <td>Metode Bayar</td>
             <td>:</td>
             <td><?php echo $p->metode_bayar ?></td>

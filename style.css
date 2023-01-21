@@ -44,6 +44,7 @@ body {
     padding: 10px 17px;
     color: #fff;
     background-color: #1A80AF;
+    margin-bottom: 10px;
 }
 .table-data{
     width: 50%;
@@ -81,22 +82,46 @@ body {
     cursor: pointer;
     background-color: #52C8FE;
 }
-header {
-    border:1px solid;
+header{
     background-color: #fff;
 }
-header::after{
-    content:'';
+header::after {
+    content:'' ;
     display: block;
     clear: both;
 }
 header h1 {
     padding: 15px 25px;
-    border:1px solid;
     display: inline-block;
     float: left;
 }
 header ul {
-    border: 1px solid;
     float: left;
+}
+header ul li {
+    padding: 24px 25px;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    width: 90%;
+    padding:10px ;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+.table tr {
+    height: 30px;
+}
+.table tr td {
+    padding: 5px 10px;
+}
+.table tr td:nth-child(1){
+    text-align: center;
 }
